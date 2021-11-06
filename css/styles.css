@@ -156,6 +156,9 @@
  .about {
      text-align:center;
 }
+.about-list {
+  list-style: none;
+}
  .profile, .about, table, .container {
      max-width: 700px;
      margin: 0 auto;
