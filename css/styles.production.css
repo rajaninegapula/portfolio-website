@@ -155,7 +155,7 @@ ul {
 	 -webkit-box-pack: center;
 	     -ms-flex-pack: center;
 	         justify-content: center;
-	 text-align: center;
+	 align-items: center;
 	 height: 150px;
 	 margin-top: auto;
 	 bottom: 0;
