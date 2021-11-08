@@ -250,9 +250,9 @@
          font-size: 22px;
     }
 }
-#about-picture {
-  width: 120px;
-  height: 120px;
+.sizesvg {
+  width: 20px;
+  height: 20px;
 }
  @-webkit-keyframes color-change {
      0% {
