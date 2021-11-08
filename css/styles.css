@@ -27,6 +27,7 @@
      font-weight: 400;
      font-size: 16px;
      line-height: 1.6;
+     
 }
  * {
      box-sizing: border-box;
@@ -129,7 +130,6 @@
      font-size: 16px;
      line-height: 1.6;
      clear: both;
-     margin-top: 310px;
 }
  .page-header {
      display: flex;
@@ -156,6 +156,9 @@
 }
  .about {
      text-align:center;
+}
+ .about-list {
+     list-style: none;
 }
  .profile, .about, table, .container {
      max-width: 700px;
