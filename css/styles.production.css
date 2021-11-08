@@ -249,10 +249,6 @@
          font-size: 22px;
     }
 }
-.sizesvg {
-  width: 20px;
-  height: 20px;
-}
  @-webkit-keyframes color-change {
      0% {
          fill: undefined;
@@ -274,6 +270,10 @@
      100% {
          fill: undefined;
     }
+}
+#sizesvg {
+  width: 100px;
+  height: 100px;
 }
  .sun {
      -webkit-animation: 4s color-change infinite alternate linear;
