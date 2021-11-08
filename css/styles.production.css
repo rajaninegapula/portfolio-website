@@ -210,29 +210,6 @@ table, th, tr, td {
     padding: 2px;
     text-align: center;
 }
-
-.grid__item {
-     background-color: lightgray;
-     display: inline-block;
-     width: 33%;
-}
-.grid {
-		display: -ms-grid;
-		display: grid;
-		-ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-gap: 20px;
-}
-.grid__item:last-child {
-		-ms-grid-column: 3;
-		    grid-column-start: 3;
-		-ms-grid-column-span: 0;
-		grid-column-end: 3;
-		-ms-grid-row: 1;
-		    grid-row-start: 1;
-		-ms-grid-row-span: 2;
-		grid-row-end: 3;
-}
 @supports (display: grid) {
 		.grid {
 				display: -ms-grid;
