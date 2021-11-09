@@ -225,18 +225,6 @@ span {
   margin: 0 auto;
 }
 
-.work {
-  padding-left: 20px;
-}
-
-.grid {
-  padding: 20px;
-}
-
-.grid__item {
-  padding-left: 10px;
-}
-
 table, th, tr, td {
   border: black 1px solid;
   padding: 2px;
@@ -397,4 +385,16 @@ table, th, tr, td {
 .cloud-back {
   -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
   animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+.work {
+  padding-left: 20px;
+}
+
+.grid {
+  padding: 20px;
+}
+
+.grid__item {
+  padding-left: 10px;
 }
