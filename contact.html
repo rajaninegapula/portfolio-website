@@ -8,6 +8,8 @@
   <link rel="shortcut icon" href="favicon.ico" type="img/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
   <link href="css/styles.production.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -33,35 +35,83 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <div class="profile">
-      <h1>Contact info</h1>
-      <strong>Rajani Negapula</strong><br>
-      18 X strasse<br>
-      69121 Heidelberg<br>
-      Deutschland<br>
-      <br>
-      Tel:<a href="tel:0-172-000-0000"> click to call</a><br>
-      Email:<a href="mailto:rajaninegapula.bali@gmail.com">rajaninegapula.bali@gmail.com</a>
-      <br>
-      Skype: <a href="skype:rajanibali">rajanibali</a><br>
-      <br>
+
+
+  <!--  test-->
+  <h1 class="contact_header">Contact me</h1>
+  <div class="myContact">
+
+    <div class="myContainer">
+      <div class="contactInfo">
+        <div class="box">
+          <div class="icon"></div>
+          <div class="text">
+            <h3>Address</h3>
+            <p>
+              18 X strasse<br>
+              69121 Heidelberg<br>
+              Deutschland<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="icon"></div>
+          <div class="text">
+            <h3>Tel</h3>
+            <p>
+              <a href="tel:0-172-000-0000"> click to call</a>
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon"></div>
+          <div class="text">
+            <h3>Email</h3>
+
+            <a href="mailto:rajaninegapula.bali@gmail.com">rajaninegapula.bali@gmail.com</a>
+
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon"></div>
+          <div class="text">
+            <h3>Skype</h3>
+
+            <a href="skype:rajanibali">rajanibali</a>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="contactForm">
+        <form>
+
+          <h2>Send Message</h2>
+          <!--<div class="inputBox">-->
+          <label>Full Name</label>
+          <input type="text" name="full name" required>
+
+
+          <!--</div>-->
+          <!--<div class="inputBox">-->
+          <label>Email: </label>
+          <input type="text" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address" required>
+
+          <!--</div>-->
+          <div class="inputBox">
+            <label>Message</label>
+            <textarea name="Message" id="" required></textarea>
+
+          </div>
+          <div class="inputBox">
+            <input type="submit" value="Send">
+
+          </div>
+        </form>
+      </div>
     </div>
-    <div class="contact">
-      <form action="mailto:rajaninegapula.bali@gmail.com">
-        <button>Contact me</button>
-      </form>
-      <form action="rajaninegapula.bali@gmail.com" method="post" id="contact-form">
-        <label class="standard-label" for="contact-email">Email:</label>
-        <input type="email" id="contact-email" placeholder="Enter your Email" required><br>
-        <label class="standard-label" for="Telephone">Telephone: </label>
-        <input type="tel" id="Telephone" pattern="\d{4}[\-]\d{4}[\-]\d{4}" placeholder="xxxx-xxxx-xxxx format"><br>
-        <label class="standard-label" for="Message">Message: </label>
-        <textarea id="Message" maxlength="240"></textarea><br>
-        <input type="submit" value="Send message">
-      </form>
-    </div>
-  </main>
+  </div>
   <!-- Footer with links to social media profiles -->
   <footer class="page-footer">
     <p>Find me on</p>
@@ -77,6 +127,7 @@
         <img src="img/linkedin_icon.svg" alt="linkedin" width="30" height="30"></a>
     </div>
   </footer>
+
   <script src="js/tota11y.min.js"></script>
 </body>
 
