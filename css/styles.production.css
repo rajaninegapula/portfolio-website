@@ -7,17 +7,18 @@
  a tag: #357b70;
  a visted link: #05676e;
  a active: #489c79;
- background-color: #357b70;
- button: white;
- button-secondary: #2b2b2b;
- background-color: #e0b354;
+ background-color: #d2f8d2;
+ button: #2b2b2b;
+ btn background-color: #2b2b2b;
  span: #800080;
  */
+
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
+  background-color: #cff3e5;
 }
 
 * {
@@ -30,14 +31,6 @@ header {
   font-size: 20px;
   line-height: 1.6;
 }
-
-footer {
-  font-weight: 700;
-  font-size: 35px;
-  line-height: 0.2;
-  justify-content: center;
-}
-
 h1 {
   color: #c71585;
   font-size: 30px;
@@ -91,10 +84,10 @@ a:active {
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the button */
-  background-color: #000;
+  background-color: #2b2b2b;
   color: white;
   text-decoration: none;
-  padding: 10px;
+  padding: 20px;
   border-radius: 3px;
   /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
@@ -110,17 +103,18 @@ button {
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the button */
-  background-color: #000;
-  color: white;
+  /*background-color: #2b2b2b;
+  color: white;*/
   text-decoration: none;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 10px;
   /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s opacity;
   -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
 }
+
 
 button:hover, button:focus, .button:hover, .button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
@@ -129,7 +123,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   opacity: 0.7;
 }
 
-.button__secondary {
+.button__secondary, .button, button {
   background-color: #e0b354;
   color: #2b2b2b;
 }
@@ -151,29 +145,89 @@ span {
   border-radius: 50%;
 }
 
-page-footer {
-  display: -webkit-box;
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+/*  float: right;*/
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container2 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.containerposition {
+  text-align: center;
+}
+
+.labl {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.inp {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .labl, .inp, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.page-footer {
+  clear:both;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   height: 150px;
   bottom: 0;
   width: 100%;
-  background-color: #d8bfd8;
+  background-color: #c1c2ff;
   font-family: 'Lato', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  clear: both;
-  margin-top: 320px;
+  margin-top: 250px;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .page-header {
@@ -215,28 +269,30 @@ page-footer {
   text-align: center;
 }
 
-.profile, .about, table, .container {
+.about, table, .container {
   max-width: 300px;
   margin: 0 auto;
 }
 
+.profile {
+  margin: 0 auto;
+  margin-top: 100px;
+  max-width: 700px;
+}
+
+.aboutpic {
+  width: 100%;
+  border-radius: 50%;
+
+}
+.homebutton{
+  padding-top: 20px;
+  text-align: center;
+  }
 table, th, tr, td {
   border: black 1px solid;
   padding: 2px;
   text-align: center;
-}
-
-#sizesvg {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 300px;
-  height: 300px;
-}
-
-.sun {
-  -webkit-animation: 4s color-change infinite alternate linear;
-  animation: 4s color-change infinite alternate linear;
 }
 
 @supports (display: grid) {
@@ -269,12 +325,12 @@ table, th, tr, td {
   }
 }
 
-/*
 @media all and (max-width: 500px) {
   .grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-  }
+    }
+
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
@@ -282,7 +338,7 @@ table, th, tr, td {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
   }
-}
+  }
 
 @media all and (max-width: 750px) {
   .grid {
@@ -293,39 +349,63 @@ table, th, tr, td {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
-
   h1 {
     font-size: 22px;
   }
 }
-*/
-@-webkit-keyframes color-change {
+@media all and (max-width: 750px) {
+.profile__portrait {
+  text-align: center;
+  margin: 20px;
+}
+.mediatext {
+  margin: 20px;
+}
+h1 {
+  margin:5px;
+}
+}
+
+#sizesvg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 300px;
+}
+
+.sun {
+  -webkit-animation: 4s color-change infinite alternate linear;
+  animation: 4s color-change infinite alternate linear;
+}
+
+ @-webkit-keyframes color-change {
   0% {
-    fill: undefined;
+    fill: #edc655;
   }
 
   50% {
-    fill: undefined;
+    fill: #fcffad;
   }
 
   100% {
-    fill: undefined;
+    fill: #f76414;
   }
-}
+  }
 
 @keyframes color-change {
   0% {
-    fill: undefined;
+    fill: #edc655;
   }
 
   50% {
-    fill: undefined;
+    fill: #fcffad;
   }
 
   100% {
-    fill: undefined;
+    fill: #f76414;
   }
-}
+  }
 
 @-webkit-keyframes cloud-move {
   from {
@@ -387,4 +467,171 @@ table, th, tr, td {
 
 .work {
   padding-left: 20px;
+}
+
+
+
+/*ADDED*/
+.contact_h1{
+    color: black
+}
+
+.text p, .text h3, .myContact {
+   margin: 0;
+    padding: 0
+}
+
+.myContact{
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#6B6B6B;
+    color: #fff;
+}
+
+.myContent{
+    max-width: 800px;
+    text-align: center;
+}
+
+.myContact .myContent h2{
+    font-size: 36px;
+    font-weight: 500;
+/*    color: #fff;*/
+}
+.myContact .myContent p{
+
+    font-weight: 300;
+/*    color: #fff;*/
+}
+
+.myContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.myContainer .contactInfo{
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.myContainer .contactInfo .box{
+
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.myContainer .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+/*    background: #fff*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    border-radius: 50%;
+}
+
+.myContainer .contactInfo .box .text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 300;
+
+}
+.myContainer .contactInfo .box .text h3{
+    font-weight: 500;
+/*    color: #00bcd4;*/
+    color: deepskyblue
+}
+
+.contactForm{
+    width: 40%;
+    padding: 40px;
+/*    background: #fff*/
+}
+.contactForm h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #333;
+
+
+/*    background: #fff*/
+}
+.contactForm .inputBox{
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+   padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #333;
+    resize: none
+}
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+
+
+.contactForm .inputBox input[ type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+.contactForm h2{
+    color: #fff
+}
+
+@media (max-width:991px){
+
+    .myContact{
+        padding: 50px;
+
+    }
+    .myContainer {
+        flex-direction: column;
+    }
+    .myContainer .contactInfo{
+        margin-bottom: 40px;
+    }
+    .myContainer .contactInfo,
+    .contactForm{
+        width: 100%
+    }
+}
+
+.text a{
+    color: white
+}
+.contact_header{
+    color: black;
+    text-align: center;
+    margin-bottom: 25px;
 }
