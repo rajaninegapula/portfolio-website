@@ -355,7 +355,7 @@ span {
   }
   */
   @media only screen and (max-width: 350px) {
-    .profile__portrait, .aboutpic {
+    .profile__portrait {
       text-align: center;
       margin-right: 50px;
       margin-left: 50px;
@@ -384,7 +384,7 @@ span {
   }
 
   @media only screen and (max-width: 450px) {
-    .profile__portrait, .aboutpic {
+    .profile__portrait {
       text-align: center;
       margin-right: 75px;
       margin-left: 75px;
@@ -413,7 +413,7 @@ span {
   }
 
   @media only screen and (min-width:450px) and (max-width: 600px) {
-    .profile__portrait, .aboutpic {
+    .profile__portrait {
       text-align: center;
       margin-right: 175px;
       margin-left: 175px;
@@ -443,7 +443,7 @@ span {
 
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) and (max-width: 992px) {
-    .profile__portrait .aboutpic {
+    .profile__portrait {
       text-align: center;
       margin-right: 50px;
       margin-left: 50px;
