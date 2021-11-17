@@ -12,8 +12,8 @@
 --background: white;
 --text: black;
 --green: green;
+--blue: blue;
 --buttonbg: #2b2b2b;
---navactive: #d8bfd8;
 --inptext: #ccc;
 --inpsubmitbg: #04AA6D;
 --inphoverbg: #45a049;
@@ -89,7 +89,7 @@ a:focus {
 
 a:active {
   /* selected link */
-  color: green;
+  color: blue;
 }
 
 .button {
@@ -158,7 +158,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 .navigation-list__item--active {
   text-decoration: none;
-  color: #d8bfd8;
+  color: blue;
 }
 
 span {
@@ -656,15 +656,15 @@ table, th, tr, td {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-color: #6B6B6B;
   color: white;
 }
@@ -691,11 +691,11 @@ table, th, tr, td {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-top: 30px;
 }
 
@@ -706,8 +706,8 @@ table, th, tr, td {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .myContainer .contactInfo .box {
@@ -726,11 +726,11 @@ table, th, tr, td {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 22px;
   border-radius: 50%;
 }
@@ -741,8 +741,8 @@ table, th, tr, td {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-left: 20px;
   font-size: 16px;
   font-weight: 300;
