@@ -5,10 +5,27 @@
 * Browsers: last 4 version
 */
 /* Colors used Text Color: #2b2b2b;
-Primary Color: #800080;
-Secondary Color: #8B0000;
-background color: white;
-text color: black;
+--primary-color: #800080;
+--secondary-color: #8B0000;
+--font-weight1: 700;
+--h2: #dc143c;
+--background: white;
+--text: black;
+--green: green;
+--buttonbg: #2b2b2b;
+--navactive: #d8bfd8;
+--inptext: #ccc;
+--inpsubmitbg: #04AA6D;
+--inphoverbg: #45a049;
+--container2bg: #f2f2f2;
+--footerbg: #c1c2ff;
+--gridbg: lightgray;
+--sun1: #edc655;
+--sun2: #fcffad;
+--sun3: #f76414;
+--contactbg: #6B6B6B;
+--contactform: #333;
+--contactinp: #666;
  */
 body {
   font-family: 'Lato', sans-serif;
@@ -295,6 +312,7 @@ input[type=submit]:hover {
 .about, table, .container {
   max-width: 300px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .aboutpic {
@@ -306,12 +324,6 @@ table, th, tr, td {
   border: black 1px solid;
   padding: 2px;
   text-align: center;
-}
-
-.grid__item {
-  background-color: lightgray;
-  display: inline-block;
-  width: 33%;
 }
 
 @supports (display: grid) {
@@ -340,7 +352,7 @@ table, th, tr, td {
     grid-column: 3 / 3;
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
-    grid-row: 1 / 3;
+    /*grid-row: 1 / 3;*/
   }
 }
 
@@ -373,21 +385,22 @@ table, th, tr, td {
   }
 }
 
-/*@media all and (max-width: 750px) {
-    .profile__portrait {
-      text-align: center;
-      margin: 20px;
-    }
-
-    .mediatext {
-      margin: 20px;
-    }
-
-    h1 {
-      margin: 5px;
-    }
+/*index responsive layout with various screen dimensions..
+@media all and (max-width: 750px) {
+  .profile__portrait {
+    text-align: center;
+    margin: 20px;
   }
-  */
+
+  .mediatext {
+    margin: 20px;
+  }
+
+  h1 {
+    margin: 5px;
+  }
+}*/
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 350px) {
   .profile__portrait {
     text-align: center;
@@ -515,6 +528,14 @@ table, th, tr, td {
   }
 }
 
+/* Contact Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .labl, .inp, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
 #sizesvg {
   display: block;
   margin-left: auto;
@@ -620,7 +641,7 @@ table, th, tr, td {
 
 /*ADDED*/
 .contact_h1 {
-  color: black;
+  color: black
 }
 
 .text p, .text h3, .myContact {
@@ -635,15 +656,15 @@ table, th, tr, td {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #6B6B6B;
   color: white;
 }
@@ -670,11 +691,11 @@ table, th, tr, td {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 30px;
 }
 
@@ -685,8 +706,8 @@ table, th, tr, td {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .myContainer .contactInfo .box {
@@ -705,11 +726,11 @@ table, th, tr, td {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 22px;
   border-radius: 50%;
 }
@@ -720,8 +741,8 @@ table, th, tr, td {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-left: 20px;
   font-size: 16px;
   font-weight: 300;
@@ -752,17 +773,7 @@ table, th, tr, td {
   margin-top: 10px;
 }
 
-.contactForm .inputBox input {
-  width: 100%;
-  padding: 5px 0;
-  font-size: 16px;
-  margin: 10px 0;
-  border: none;
-  outline: none;
-  border-bottom: 2px solid #333;
-  resize: none
-}
-
+.contactForm .inputBox input,
 .contactForm .inputBox textarea {
   width: 100%;
   padding: 5px 0;
@@ -797,7 +808,7 @@ table, th, tr, td {
 }
 
 .contactForm h2 {
-  color: white;
+  color: white
 }
 
 .text a {
