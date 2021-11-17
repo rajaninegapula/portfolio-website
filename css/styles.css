@@ -1,15 +1,31 @@
 /* Colors used Text Color: #2b2b2b;
-Primary Color: #d8bfd8;
-Secondary Color: #8fbc8f;
+Primary Color: #800080;
+Secondary Color: #8B0000;
 background color: white;
 text color: black;
  */
 :root {
-  --primary-color: #d8bfd8;
-  --secondary-color: #8fbc8f;
-  --black: #000000;
-  --white: #fff;
+  --primary-color: #800080;
+  --secondary-color: #8B0000;
   --font-weight1: 700;
+  --h2: #dc143c;
+  --background: white;
+  --text: black;
+  --green: green;
+  --buttonbg: #2b2b2b;
+  --navactive: #d8bfd8;
+  --inptext: #ccc;
+  --inpsubmitbg: #04AA6D;
+  --inphoverbg: #45a049;
+  --container2bg: #f2f2f2;
+  --footerbg: #c1c2ff;
+  --gridbg: lightgray;
+  --sun1: #edc655;
+  --sun2: #fcffad;
+  --sun3: #f76414;
+  --contactbg: #6B6B6B;
+  --contactform: #333;
+  --contactinp: #666;
 }
 
 body {
@@ -17,7 +33,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
-  background-color: white;
+  background-color: var(--background);
 }
 
 * {
@@ -25,26 +41,26 @@ body {
 }
 
 header {
-  font-weight: 700;
+  font-weight: var(--font-weight1);
   font-size: 20px;
   line-height: 1.6;
 }
 
 h1 {
-  color: #c71585;
+  color: var(--primary-color);
   font-size: 30px;
-  font-weight: 700;
+  font-weight: var(--font-weight1);
 }
 
 h2 {
-  color: #dc143c;
+  color: var(--h2);
   font-size: 24px;
-  font-weight: 700;
+  font-weight: var(--font-weight1);
 }
 
 h3 {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: var(--font-weight1);
 }
 
 ul {
@@ -52,28 +68,28 @@ ul {
 }
 
 a {
-  color: black;
+  color: var(--primary-color);
 }
 
 a:visited {
-  color: red;
+  color: var(--green);
 }
 
 a:hover {
   /* No underlining when hovering over a link */
   text-decoration: none;
-  color: blue;
+  color: var(--secondary-color);
 }
 
 a:focus {
   /* No underlining when hovering over a link */
   text-decoration: none;
-  color: green;
+  color: var(--secondary-color);
 }
 
 a:active {
   /* selected link */
-  color: blue;
+  color: var(--green);
 }
 
 .button {
@@ -83,8 +99,8 @@ a:active {
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the button */
-  background-color: #2b2b2b;
-  color: white;
+  background-color: var(--buttonbg);
+  color: var(--background);
   text-decoration: none;
   padding: 20px;
   border-radius: 3px;
@@ -138,13 +154,13 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 .navigation-list__item--active {
   text-decoration: none;
-  color: #d8bfd8;
+  color: var(--navactive);
 }
 
 span {
-  color: #800080;
+  color: var(--primary-color);
   font-size: 24px;
-  font-weight: 700;
+  font-weight: var(--font-weight1);
 }
 
 .profile {
@@ -167,7 +183,7 @@ span {
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
-  color: #ccc;
+  color: var(--inptext);
   border-radius: 4px;
   resize: vertical;
 }
@@ -178,8 +194,8 @@ label {
 }
 
 input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
+  background-color: var(--inpsubmitbg);
+  color: var(--background);
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -188,12 +204,12 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: var(--inphoverbg);
 }
 
 .container2 {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: var(--container2bg);
   padding: 20px;
 }
 
@@ -249,7 +265,7 @@ input[type=submit]:hover {
   height: 150px;
   bottom: 0;
   width: 100%;
-  background-color: #c1c2ff;
+  background-color: var(--footerbg);
   font-family: 'Lato', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -276,7 +292,7 @@ table, th, tr, td {
 }
 
 .grid__item {
-  background-color: lightgray;
+  background-color: var(--gridbg);
   display: inline-block;
   width: 33%;
 }
@@ -293,7 +309,7 @@ table, th, tr, td {
   }
 
   .grid__item {
-    background-color: lightgray;
+    background-color: var(--gridbg);
     width: auto;
     min-height: auto;
     margin: 0;
@@ -468,15 +484,15 @@ table, th, tr, td {
 
 @keyframes color-change {
   0% {
-    fill: #edc655;
+    fill: var(--sun1);
   }
 
   50% {
-    fill: #fcffad;
+    fill: var(--sun2);
   }
 
   100% {
-    fill: #f76414;
+    fill: var(--sun3);
   }
 }
 
@@ -514,7 +530,7 @@ table, th, tr, td {
 
 /*ADDED*/
 .contact_h1 {
-  color: black
+  color: var(--text);
 }
 
 .text p, .text h3, .myContact {
@@ -529,8 +545,8 @@ table, th, tr, td {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #6B6B6B;
-  color: white;
+  background-color: var(--contactbg);
+  color: var(--background);
 }
 
 .myContent {
@@ -603,7 +619,7 @@ table, th, tr, td {
 .contactForm h2 {
   font-size: 30px;
   font-weight: 500;
-  color: #333;
+  color: var(--contactform);
   /*    background: #fff*/
 }
 
@@ -621,7 +637,7 @@ table, th, tr, td {
   margin: 10px 0;
   border: none;
   outline: none;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid var(--contactform);
   resize: none
 }
 
@@ -633,7 +649,7 @@ table, th, tr, td {
   margin: 10px 0;
   pointer-events: none;
   transition: 0.5s;
-  color: #666;
+  color: var(--contactinp);
 }
 
 .contactForm .inputBox input[ type="submit"] {
@@ -646,15 +662,15 @@ table, th, tr, td {
 }
 
 .contactForm h2 {
-  color: white;
+  color: var(--background);
 }
 
 .text a {
-  color: white
+  color: var(--background)
 }
 
 .contact_header {
-  color: black;
+  color: var(--text);
   text-align: center;
   margin-bottom: 25px;
 }
