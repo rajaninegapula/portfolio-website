@@ -12,8 +12,8 @@ text color: black;
   --background: white;
   --text: black;
   --green: green;
+  --blue: blue;
   --buttonbg: #2b2b2b;
-  --navactive: #d8bfd8;
   --inptext: #ccc;
   --inpsubmitbg: #04AA6D;
   --inphoverbg: #45a049;
@@ -89,7 +89,7 @@ a:focus {
 
 a:active {
   /* selected link */
-  color: var(--green);
+  color: var(--blue);
 }
 
 .button {
@@ -154,7 +154,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 .navigation-list__item--active {
   text-decoration: none;
-  color: var(--navactive);
+  color: var(--blue);
 }
 
 span {
