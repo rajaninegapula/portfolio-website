@@ -13,6 +13,7 @@ text color: black;
   --text: black;
   --green: green;
   --blue: blue;
+  --yellow:yellow;
   --buttonbg: #2b2b2b;
   --inptext: #ccc;
   --inpsubmitbg: #04AA6D;
@@ -607,7 +608,7 @@ table, th, tr, td {
 .myContainer .contactInfo .box .text h3 {
   font-weight: 500;
   /*    color: #00bcd4;*/
-  color: deepskyblue
+  color: var(--yellow)
 }
 
 .contactForm {
